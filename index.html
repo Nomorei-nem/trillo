@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+		<title>trillo &mdash; Your all-in-one booking app</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<img src="img/logo.png" alt="trillo logo" class="logo" />
+
+				<form action="#" class="search">
+					<input
+						type="text"
+						class="search__input"
+						placeholder="Search hotels"
+					/>
+					<div class="search-results">
+						<div class="search-recent">
+							<h6 class="search-header">Based on recent search:</h6>
+							<ul class="search-recent">
+								<li>
+									<svg class="search__icon">
+										<use
+											xlink:href="img/sprite.svg#icon-magnifying-glass"
+										></use>
+									</svg>
+									<span class="hotel-name">The Overlook Hotel</span>
+								</li>
+								<li>
+									<svg class="search__icon">
+										<use
+											xlink:href="img/sprite.svg#icon-magnifying-glass"
+										></use>
+									</svg>
+									<span class="hotel-name">Hotel California</span>
+								</li>
+								<li>
+									<svg class="search__icon">
+										<use
+											xlink:href="img/sprite.svg#icon-magnifying-glass"
+										></use>
+									</svg>
+									<span class="hotel-name">Grand Budapest Hotel</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="search-trending">
+							<h6 class="search-header">Currently trending:</h6>
+							<ul class="search-trending">
+								<li>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="w-6 h-6"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
+										/>
+									</svg>
+									<span class="logo-container"
+										><img
+											src="/img/hotel-logos/sumptua.png"
+											alt="Sumptua logo"
+											class="hotel-logo" /></span
+									><span class="name-container">Sumptua</span>
+								</li>
+								<li>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="w-6 h-6"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
+										/>
+									</svg>
+									<span class="hotel-logo"
+										><img
+											src="/img/hotel-logos/new-harbour-view.png"
+											alt="New Harbour View ogo"
+											class="hotel-logo" /></span
+									><span class="hotel-name">New Harbour View</span>
+								</li>
+								<li>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="w-6 h-6"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
+										/>
+									</svg>
+									<span class="logo-container"
+										><img
+											src="/img/hotel-logos/opuluxe.png"
+											alt="Opuluxe logo"
+											class="hotel-logo" /></span
+									><span class="hotel-name">Opuluxe</span>
+								</li>
+								<li>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="w-6 h-6"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
+										/>
+									</svg>
+									<span class="logo-container"
+										><img
+											src="/img/hotel-logos/golden-dunes.png"
+											alt="Golden Dunes logo"
+											class="hotel-logo" /></span
+									><span class="hotel-name">Golden Dunes</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<button class="search__button">
+						<svg class="search__icon">
+							<use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+						</svg>
+					</button>
+				</form>
+
+				<nav class="user-nav">
+					<div class="user-nav__icon-box user__bookmarks">
+						<svg class="user-nav__icon">
+							<use xlink:href="img/sprite.svg#icon-bookmark"></use>
+						</svg>
+						<span class="user-nav__notification">7</span>
+					</div>
+					<div class="user-nav__icon-box user__messages">
+						<svg class="user-nav__icon">
+							<use xlink:href="img/sprite.svg#icon-chat"></use>
+						</svg>
+						<span class="user-nav__notification">13</span>
+
+						<div class="messages">
+							<ul class="unread-messages">
+								<li class="li">
+									<span class="img-name"
+										><span
+											><img
+												src="/img/user-1.jpg"
+												alt="Profile photo"
+												class="message-photo"
+										/></span>
+										<span class="name">Nick Smith</span> </span
+									><span class="message"
+										>I can't believe you gave Hotel California a 3-star
+										review?!?!...</span
+									><span class="time">3 hours ago</span>
+								</li>
+								<li class="li">
+									<span class="img-name"
+										><span
+											><img
+												src="/img/dog.jpg"
+												alt="Profile photo"
+												class="message-photo"
+										/></span>
+										<span class="name">Biscuit</span></span
+									><span class="message">Woof! Woof! GRRRRR!! WOOF! WOO...</span
+									><span class="time">2 days ago</span>
+								</li>
+								<li class="li">
+									<span class="img-name"
+										><span
+											><img
+												src="/img/default-profile.png"
+												alt="Profile photo"
+												class="message-photo" /></span
+										><span class="name">John Doe</span></span
+									><span class="message"
+										>Congratulations! You won a free PlayStation 6! Visit
+										www...</span
+									><span class="time">10 days ago</span>
+								</li>
+								<li class="li">
+									<span class="img-name"
+										><span
+											><img
+												src="/img/logo.jpg"
+												alt="Profile photo"
+												class="message-photo"
+										/></span>
+										<span class="name">Trillo</span></span
+									><span class="message"
+										>Action Required. Please confirm your Email...</span
+									><span class="time">2 weeks ago</span>
+								</li>
+							</ul>
+							<div class="more-messages">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="arrow-down"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="m19.5 8.25-7.5 7.5-7.5-7.5"
+									/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="user-nav__user">
+						<img
+							src="img/user.jpg"
+							alt="User photo"
+							class="user-nav__user-photo"
+						/>
+						<span class="user-nav__user-name">Jonas</span>
+						<div class="user-nav__user-options">
+							<ul class="options-section profile-details">
+								<li class="image-container">
+									<img
+										src="img/user.jpg"
+										alt="User photo"
+										class="profile-photo"
+									/>
+								</li>
+								<li>
+									<span class="user-name">Jonas Schemdtmass</span>
+									<span class="email-address">notareal@email.io</span>
+								</li>
+							</ul>
+
+							<ul class="options-section">
+								<li>
+									<svg class="options-icon">
+										<use xlink:href="img/sprite.svg#icon-cog"></use>
+									</svg>
+									<span>Profile Settings</span>
+								</li>
+								<li>
+									<svg class="options-icon">
+										<use xlink:href="img/sprite.svg#icon-cogs"></use>
+									</svg>
+									<span>Account Settings</span>
+								</li>
+							</ul>
+							<ul class="options-section">
+								<li>
+									<span
+										><svg class="options-icon">
+											<use xlink:href="img/sprite.svg#icon-bookmark"></use>
+										</svg>
+										<span>Bookmarks</span></span
+									><span class="notifications">7</span>
+								</li>
+								<li>
+									<span
+										><svg class="options-icon">
+											<use xlink:href="img/sprite.svg#icon-chat"></use>
+										</svg>
+										<span>Messages</span></span
+									><span class="notifications">13</span>
+								</li>
+							</ul>
+
+							<ul class="options-section">
+								<li>
+									<span>
+										<svg class="options-icon">
+											<use xlink:href="img/sprite.svg#icon-safari"></use>
+										</svg>
+										<span>Location:</span></span
+									>
+									<span
+										>Portugal<img
+											class="flag"
+											src="/img/flags/pt.svg"
+											alt="Flag of Portugal"
+									/></span>
+								</li>
+								<li>
+									<span
+										><svg class="options-icon">
+											<use xlink:href="img/sprite.svg#icon-sphere"></use>
+										</svg>
+										<span>Language:</span></span
+									><span
+										>English<img
+											class="flag"
+											src="/img/flags/uk.svg"
+											alt="Flag of UK"
+									/></span>
+								</li>
+							</ul>
+
+							<ul class="options-section">
+								<li>
+									<svg class="options-icon">
+										<use xlink:href="img/sprite.svg#icon-question"></use>
+									</svg>
+									<span>Help</span>
+								</li>
+								<li>
+									<svg class="options-icon">
+										<use xlink:href="img/sprite.svg#icon-info"></use>
+									</svg>
+									<span>Information</span>
+								</li>
+								<li>
+									<svg class="options-icon">
+										<use xlink:href="img/sprite.svg#icon-notification"></use>
+									</svg>
+									<span>Feedback</span>
+								</li>
+								<li>
+									<svg class="options-icon">
+										<use xlink:href="img/sprite.svg#icon-log-out"></use>
+									</svg>
+									<span>Sign out</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<div class="content">
+				<nav class="sidebar">
+					<ul class="side-nav">
+						<li class="side-nav__item side-nav__item--active">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="img/sprite.svg#icon-home"></use>
+								</svg>
+								<span>Hotel</span>
+							</a>
+						</li>
+						<li class="side-nav__item">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+								</svg>
+								<span>Flight</span>
+							</a>
+						</li>
+						<li class="side-nav__item">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="img/sprite.svg#icon-key"></use>
+								</svg>
+								<span>Car rental</span>
+							</a>
+						</li>
+						<li class="side-nav__item">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="img/sprite.svg#icon-map"></use>
+								</svg>
+								<span>Tours</span>
+							</a>
+						</li>
+					</ul>
+
+					<div class="legal">&copy; 2024 by trillo. All rights reserved.</div>
+				</nav>
+
+				<main class="hotel-view">
+					<div class="gallery">
+						<figure class="gallery__item gallery__item-1">
+							<img
+								src="img/hotel-1.jpg"
+								alt="Photo of hotel 1"
+								class="gallery__photo"
+							/>
+						</figure>
+						<figure class="gallery__item gallery__item-2">
+							<img
+								src="img/hotel-2.jpg"
+								alt="Photo of hotel 1"
+								class="gallery__photo"
+							/>
+						</figure>
+						<figure class="gallery__item gallery__item-3">
+							<img
+								src="img/hotel-3.jpg"
+								alt="Photo of hotel 1"
+								class="gallery__photo"
+							/>
+						</figure>
+					</div>
+
+					<div class="overview">
+						<h1 class="overview__heading">Hotel Las Palmas</h1>
+						<div class="overview__stars">
+							<svg class="overview__icon-star">
+								<use xlink:href="img/sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="overview__icon-star">
+								<use xlink:href="img/sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="overview__icon-star">
+								<use xlink:href="img/sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="overview__icon-star">
+								<use xlink:href="img/sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="overview__icon-star">
+								<use xlink:href="img/sprite.svg#icon-star"></use>
+							</svg>
+						</div>
+
+						<div class="overview__location">
+							<svg class="overview__icon-location">
+								<use xlink:href="img/sprite.svg#icon-location-pin"></use>
+							</svg>
+							<button class="btn-inline">Albufeira, Portugal</button>
+						</div>
+
+						<div class="overview__rating">
+							<div class="overview__rating-average">8.6</div>
+							<div class="overview__rating-count">429 votes</div>
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="description">
+							<p class="paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+								nisi dignissimos debitis ratione sapiente saepe. Accusantium
+								cumque, quas, ut corporis incidunt deserunt quae architecto
+								voluptate.
+							</p>
+
+							<p class="paragraph">
+								Accusantium cumque, quas, ut corporis incidunt deserunt quae
+								architecto voluptate delectus, inventore iure aliquid aliquam.
+							</p>
+
+							<ul class="list">
+								<li class="list__item">Close to the beach</li>
+								<li class="list__item">Breakfast included</li>
+								<li class="list__item">Free airport shuttle</li>
+								<li class="list__item">Free wifi in all rooms</li>
+								<li class="list__item">Air conditioning and heating</li>
+								<li class="list__item">Pets allowed</li>
+								<li class="list__item">We speak all languages</li>
+								<li class="list__item">Perfect for families</li>
+							</ul>
+							<div class="recommend">
+								<p class="recommend__count">
+									Lucy and 3 other friends recommend this hotel.
+								</p>
+								<div class="recommend__friends">
+									<img
+										src="img/user-3.jpg"
+										alt="Friend 1"
+										class="recommend__photo"
+									/>
+									<img
+										src="img/user-4.jpg"
+										alt="Friend 2"
+										class="recommend__photo"
+									/>
+									<img
+										src="img/user-5.jpg"
+										alt="Friend 3"
+										class="recommend__photo"
+									/>
+									<img
+										src="img/user-6.jpg"
+										alt="Friend 4"
+										class="recommend__photo"
+									/>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-reviews">
+							<figure class="review">
+								<blockquote class="review__text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+									doloremque architecto dicta animi, totam, itaque officia ex.
+								</blockquote>
+								<figcaption class="review__user">
+									<img
+										src="img/user-1.jpg"
+										alt="User 1"
+										class="review__photo"
+									/>
+									<div class="review__user-box">
+										<p class="review__user-name">Nick Smith</p>
+										<p class="review__user-date">Mar 8th, 2024</p>
+									</div>
+									<div class="review__rating">7.8</div>
+								</figcaption>
+							</figure>
+							<figure class="review">
+								<blockquote class="review__text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+									doloremque architecto dicta animi.
+								</blockquote>
+								<figcaption class="review__user">
+									<img
+										src="img/user-2.jpg"
+										alt="User 2"
+										class="review__photo"
+									/>
+									<div class="review__user-box">
+										<p class="review__user-name">Mary Thomas</p>
+										<p class="review__user-date">Sept 13th, 2020</p>
+									</div>
+									<div class="review__rating">9.3</div>
+								</figcaption>
+							</figure>
+							<button class="btn-inline">Show all <span>&rarr;</span></button>
+						</div>
+					</div>
+					<div class="cta">
+						<h2 class="cta__book-now">
+							Good news! We have 4 free rooms for your selected dates!
+						</h2>
+						<button class="btn">
+							<span class="btn__visible">Book now</span>
+							<span class="btn__invisible">Only 4 left</span>
+						</button>
+					</div>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
